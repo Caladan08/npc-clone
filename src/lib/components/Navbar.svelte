@@ -7,7 +7,14 @@
 			fontFamily: 'Oswald',
 			fontSize: '15px',
 			fontWeight: '100',
-			textTransform: 'uppercase'
+			textTransform: 'uppercase',
+      color: "#090164",
+      transitionProperty: "all",
+      transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+      transitionDuration: "150ms",
+      "&:hover": {
+        color: "#ee1924 !important"
+      }
 		}
 	}));
 	$: ({ classes } = useStyles());
