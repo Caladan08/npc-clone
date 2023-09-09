@@ -1,5 +1,22 @@
 <script lang="ts">
 	import ChevronDown from 'carbon-icons-svelte/lib/ChevronDown.svelte';
+	import { Menu, createStyles } from '@svelteuidev/core';
+
+	const useStyles = createStyles(() => ({
+		menuItem: {
+			fontFamily: 'Oswald',
+			fontSize: '15px',
+			fontWeight: '100',
+			textTransform: 'uppercase'
+		}
+	}));
+	$: ({ classes } = useStyles());
+
+	let matchesOpen = false,
+		statsOpen = false,
+		pointsOpen = false,
+		teamsOpen = false,
+		galleryOpen = false;
 </script>
 
 <div class="h-48 p-4 px-12 flex justify-center bg-white">
@@ -16,22 +33,92 @@
 					<a href="#">Home</a>
 				</li>
 				<li class="flex gap-2 items-center">
-					<a href="#" class="flex gap-2 items-center">Matches <ChevronDown /></a>
+					<Menu transition="fly" transitionOptions={{ y: -20 }}>
+						<a
+							href="#"
+							slot="control"
+							class="flex gap-2 items-center"
+							on:click={() => (matchesOpen = !matchesOpen)}
+							>Matches <ChevronDown
+								class={`${matchesOpen ? 'rotate-180' : ''} transition-all`}
+							/></a
+						>
+						<Menu.Item class={classes.menuItem}>Fixtures</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Results</Menu.Item>
+					</Menu>
 				</li>
 				<li class="flex gap-2 items-center">
-					<a href="#" class="flex gap-2 items-center">Stats <ChevronDown /></a>
+					<Menu transition="fly" transitionOptions={{ y: -20 }}>
+						<a
+							href="#"
+							slot="control"
+							class="flex gap-2 items-center"
+							on:click={() => (statsOpen = !statsOpen)}
+							>Stats <ChevronDown class={`${statsOpen ? 'rotate-180' : ''} transition-all`} /></a
+						>
+						<Menu.Item class={classes.menuItem}>2023</Menu.Item>
+						<Menu.Item class={classes.menuItem}>2022</Menu.Item>
+					</Menu>
 				</li>
 				<li class="flex gap-2 items-center">
-					<a href="#" class="flex gap-2 items-center">Points Table <ChevronDown /></a>
+					<Menu transition="fly" transitionOptions={{ y: -20 }}>
+						<a
+							href="#"
+							slot="control"
+							class="flex gap-2 items-center"
+							on:click={() => (pointsOpen = !pointsOpen)}
+							>Points Table <ChevronDown
+								class={`${pointsOpen ? 'rotate-180' : ''} transition-all`}
+							/></a
+						>
+						<Menu.Item class={classes.menuItem}>2023</Menu.Item>
+						<Menu.Item class={classes.menuItem}>2022</Menu.Item>
+					</Menu>
 				</li>
 				<li class="flex gap-2 items-center">
-					<a href="#" class="flex gap-2 items-center">Teams <ChevronDown /></a>
+					<Menu transition="fly" transitionOptions={{ y: -20 }}>
+						<a
+							href="#"
+							slot="control"
+							class="flex gap-2 items-center"
+							on:click={() => (teamsOpen = !teamsOpen)}
+							>Teams <ChevronDown class={`${teamsOpen ? 'rotate-180' : ''} transition-all`} /></a
+						>
+						<Menu.Item class={classes.menuItem}>Agency XI</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Blue Stallions</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Blue Tigers</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Brown Munde</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Elermore Vale Lions</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Knights Watchmen</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Maitland Monsters</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Mighty Dark Horses</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Newcastle Falcons</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Newcastle Hunters</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Newcastle Qalandars</Menu.Item>
+						<Menu.Item class={classes.menuItem}>The Fine Legs</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Turana Titans</Menu.Item>
+						<Menu.Item class={classes.menuItem}>Wallsend Tigers</Menu.Item>
+					</Menu>
 				</li>
 				<li class="flex items-center">
 					<a href="#">Sponsors</a>
 				</li>
 				<li class="flex gap-2 items-center">
-					<a href="#" class="flex gap-2 items-center">Gallery <ChevronDown /></a>
+					<Menu transition="fly" transitionOptions={{ y: -20 }}>
+						<a
+							href="#"
+							slot="control"
+							class="flex gap-2 items-center"
+							on:click={() => (galleryOpen = !galleryOpen)}
+							>Gallery <ChevronDown
+								class={`${galleryOpen ? 'rotate-180' : ''} transition-all`}
+							/></a
+						>
+						<Menu.Item class={classes.menuItem}>Super Stars of the Week</Menu.Item>
+					</Menu>
+				</li>
+				<li class="flex items-center">
+					<a href="#">About</a>
 				</li>
 			</ul>
 		</div>
