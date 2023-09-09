@@ -4,7 +4,7 @@
 
 	const useStyles = createStyles(() => ({
 		menuItem: {
-			fontFamily: 'Oswald',
+			fontFamily: 'Oswald !important',
 			fontSize: '15px',
 			fontWeight: '100',
 			textTransform: 'uppercase',
