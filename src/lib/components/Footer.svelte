@@ -3,9 +3,9 @@
 	import LogoInstagram from 'carbon-icons-svelte/lib/LogoInstagram.svelte';
 </script>
 
-<div class="footer bg-primary w-full h-auto">
+<div class="footer bg-background w-full h-auto">
 	<img src="/FooterDesign.png" alt="footer design" class="w-full" />
-	<div class="footerContent w-full p-16 flex uppercase justify-start">
+	<div class="footerContent w-full p-16 flex uppercase justify-start bg-primary">
 		<div class="flex gap-72">
 			<div class="flex flex-col gap-4">
 				<h1 class="text-white text-3xl">about</h1>
