@@ -10,7 +10,7 @@
 			<div class="flex flex-col gap-4">
 				<h1 class="text-white text-3xl">about</h1>
 				<hr class="border-secondary" />
-				<ul class="uppercase">
+				<ul class="uppercase links">
 					<li class="flex items-center">
 						<a href="#">about</a>
 					</li>
@@ -28,7 +28,7 @@
 			<div class="flex flex-col gap-4">
 				<h1 class="text-white text-3xl">terms</h1>
 				<hr class="border-secondary" />
-				<ul>
+				<ul class="links">
 					<li class="flex items-center">
 						<a href="#">Privacy Policy</a>
 					</li>
@@ -43,7 +43,7 @@
 			<div class="flex flex-col gap-4">
 				<h1 class="text-white text-3xl">social media</h1>
 				<hr class="border-secondary" />
-				<ul class="uppercase">
+				<ul class="uppercase links">
 					<li class="flex items-center">
 						<a href="#"><LogoFacebook size={24} /></a>
 					</li>
@@ -66,14 +66,14 @@
 </div>
 
 <style>
-	a:not(a.makerLink) {
+	.links > li > a {
 		color: white;
 		text-decoration: none;
 		padding: 12px;
 		position: relative;
 		font-weight: 100;
 	}
-	a:after:not(a.makerLink) {
+	a:after {
 		background: none repeat scroll 0 0 transparent;
 		bottom: 0;
 		content: '';
@@ -85,7 +85,7 @@
 		transition: width 0.3s ease 0s, left 0.3s ease 0s;
 		width: 0;
 	}
-	a:hover:after:not(a.makerLink) {
+	a:hover:after {
 		width: 100%;
 		left: 0;
 	}
