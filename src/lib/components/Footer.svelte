@@ -54,7 +54,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-full bg-black p-4 flex justify-end">
+	<div class="w-full bg-black p-4 px-8 flex justify-end">
 		<h1 class="text-white font-extralight">
 			Website made by <a
 				href="https://github.com/Caladan08"
