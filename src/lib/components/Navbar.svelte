@@ -6,7 +6,7 @@
 		menuItem: {
 			fontFamily: 'Oswald !important',
 			fontSize: '15px',
-			fontWeight: '100',
+			fontWeight: '150',
 			textTransform: 'uppercase',
       color: "#090164",
       transitionProperty: "all",
@@ -26,7 +26,7 @@
 		galleryOpen = false;
 </script>
 
-<div class="h-48 p-4 px-12 flex justify-center bg-white">
+<div class="h-40 p-4 px-12 flex justify-center bg-white">
 	<div class="navbarContent w-full flex justify-between">
 		<div class="logo flex items-center gap-4 h-full max-w-xs w-full">
 			<img src="/NPLLogo.png" alt="npl logo" class="h-32" />
