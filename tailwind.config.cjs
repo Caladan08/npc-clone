@@ -7,7 +7,8 @@ const config = {
 			colors: {
 				primary: "#090164",
 				secondary: "#ee1924",
-				tertiary: "#e8dc0e"
+				tertiary: "#e8dc0e",
+				background: "#bceaff"
 			}
 		}
 	},
