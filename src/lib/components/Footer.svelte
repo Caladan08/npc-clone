@@ -1,7 +1,6 @@
 <script lang="ts">
-  import LogoFacebook from "carbon-icons-svelte/lib/LogoFacebook.svelte";
-  import LogoInstagram from "carbon-icons-svelte/lib/LogoInstagram.svelte";
-  import { Divider } from "@svelteuidev/core"
+	import LogoFacebook from 'carbon-icons-svelte/lib/LogoFacebook.svelte';
+	import LogoInstagram from 'carbon-icons-svelte/lib/LogoInstagram.svelte';
 </script>
 
 <div class="footer bg-primary w-full h-auto">
@@ -55,9 +54,15 @@
 			</div>
 		</div>
 	</div>
-  <div class="w-full bg-black p-4 flex justify-end">
-    <h1 class="text-white font-extralight">Website made by <a href="https://github.com/Caladan08" class="makerLink hover:text-gray-400 transition-all">Caladan</a></h1>
-  </div>
+	<div class="w-full bg-black p-4 flex justify-end">
+		<h1 class="text-white font-extralight">
+			Website made by <a
+				href="https://github.com/Caladan08"
+				target="_blank"
+				class="makerLink hover:text-gray-400 transition-all">Caladan</a
+			>
+		</h1>
+	</div>
 </div>
 
 <style>
