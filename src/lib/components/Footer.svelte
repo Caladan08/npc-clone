@@ -55,9 +55,8 @@
 			</div>
 		</div>
 	</div>
-  <div class="w-full bg-black p-4 flex justify-between">
-    <h1 class="text-white font-extralight flex gap-2">© 2023 All Rights Reserved <Divider orientation="vertical" /> Newcastle Premiere League T20</h1>
-    <h1 class="text-white font-extralight">© 2023 Website made by <a href="https://github.com/Caladan08" class="makerLink hover:text-gray-400 transition-all">Caladan</a></h1>
+  <div class="w-full bg-black p-4 flex justify-end">
+    <h1 class="text-white font-extralight">Website made by <a href="https://github.com/Caladan08" class="makerLink hover:text-gray-400 transition-all">Caladan</a></h1>
   </div>
 </div>
 
