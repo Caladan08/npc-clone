@@ -43,12 +43,12 @@
 			<div class="flex flex-col gap-4">
 				<h1 class="text-white text-3xl">social media</h1>
 				<hr class="border-secondary" />
-				<ul class="uppercase links">
+				<ul class="uppercase">
 					<li class="flex items-center">
-						<a href="#"><LogoFacebook size={24} /></a>
+						<a href="#" class="text-white py-2 hover:text-gray-400 transition-all px-3"><LogoFacebook size={24} /></a>
 					</li>
 					<li class="flex items-center">
-						<a href="#"><LogoInstagram size={24} /></a>
+						<a href="#" class="text-white py-2 hover:text-gray-400 transition-all px-3"><LogoInstagram size={24} /></a>
 					</li>
 				</ul>
 			</div>
