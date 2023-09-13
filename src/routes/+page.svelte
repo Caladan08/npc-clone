@@ -12,16 +12,16 @@
   <h1 class="text-primary text-5xl">sponsors</h1>
   <div class="flex gap-4">
     <div>
-      <img src="/SponsorOne.png" alt="sponsor one">
+      <img src="/sponsors/SponsorOne.png" alt="sponsor one">
     </div>
     <div>
-      <img src="/SponsorTwo.png" alt="sponsor two">
+      <img src="/sponsors/SponsorTwo.png" alt="sponsor two">
     </div>
     <div>
-      <img src="/SponsorThree.png" alt="sponsor three">
+      <img src="/sponsors/SponsorThree.png" alt="sponsor three">
     </div>
     <div>
-      <img src="/SponsorFour.png" alt="sponsor four">
+      <img src="/sponsors/SponsorFour.png" alt="sponsor four">
     </div>
   </div>
   <a href="#" class="py-4 px-36 bg-primary hover:bg-secondary transition-all text-white uppercase font-extralight cursor-pointer">more</a>
