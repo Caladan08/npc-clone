@@ -15,13 +15,13 @@
       <img src="/SponsorOne.png" alt="sponsor one">
     </div>
     <div>
-      <img src="/SponsorTwo.png" alt="sponsor one">
+      <img src="/SponsorTwo.png" alt="sponsor two">
     </div>
     <div>
-      <img src="/SponsorThree.png" alt="sponsor one">
+      <img src="/SponsorThree.png" alt="sponsor three">
     </div>
     <div>
-      <img src="/SponsorFour.png" alt="sponsor one">
+      <img src="/SponsorFour.png" alt="sponsor four">
     </div>
   </div>
   <a href="#" class="py-4 px-36 bg-primary hover:bg-secondary transition-all text-white uppercase font-extralight cursor-pointer">more</a>
